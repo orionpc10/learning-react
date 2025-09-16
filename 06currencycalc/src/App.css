@@ -1,0 +1,54 @@
+@import "tailwindcss";
+/* Fullscreen background handled by index.css */
+
+/* Form container */
+.form-container {
+  background: rgba(255, 255, 255, 0.15); /* frosted glass */
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  border-radius: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+  padding: 2rem;
+  width: 380px;
+
+  /* Text visibility */
+  color: #111; /* Dark text */
+  font-weight: 500;
+}
+
+
+
+/* Floating Swap Button */
+.swap-button {
+  position: relative;
+  z-index: 10;
+  background-color: #6366f1; /* indigo-500 */
+  color: white;
+  font-weight: 600;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.swap-button:hover {
+  background-color: #4f46e5; /* indigo-600 */
+  transform: scale(1.05);
+}
+
+/* Convert Button */
+.convert-button {
+  width: 100%;
+  background-color: #2563eb; /* blue-600 */
+  color: white;
+  font-weight: 600;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.convert-button:hover {
+  background-color: #1d4ed8; /* blue-700 */
+  transform: scale(1.05);
+}
